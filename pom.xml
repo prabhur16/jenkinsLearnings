@@ -40,5 +40,15 @@
   </pluginManagement>
 </build>
 
+	<dependencies>
+
+<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+<dependency>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.5</version>
+</dependency>
+
+</dependencies>
 
 </project>
