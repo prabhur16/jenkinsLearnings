@@ -4,7 +4,17 @@
   <artifactId>jenkinsLearnings</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>jenkinsLearnings</name>
-  
+  <dependencies>
+
+<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+<dependency>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.5</version>
+</dependency>
+
+
+</dependencies>
   
   <build>
   <pluginManagement>
@@ -14,27 +24,6 @@
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.6.0.1398</version>
       </plugin>
-      
-      <plugin>
-		<groupId>org.jacoco</groupId>
-		<artifactId>jacoco-maven-plugin</artifactId>
-		<version>0.8.2</version>
-		<executions>
-			<execution>
-				<goals>
-					<goal>prepare-agent</goal>
-				</goals>
-			</execution>
-			<!-- attached to Maven test phase -->
-			<execution>
-				<id>report</id>
-				<phase>test</phase>
-				<goals>
-					<goal>report</goal>
-				</goals>
-			</execution>
-		</executions>
-	</plugin>
        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -44,20 +33,9 @@
                 <target>1.8</target>
             </configuration>
         </plugin>
-	    <plugin>
     </plugins>
   </pluginManagement>
 </build>
 
-
-
-<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-<dependency>
-    <groupId>org.jacoco</groupId>
-    <artifactId>jacoco-maven-plugin</artifactId>
-    <version>0.8.5</version>
-</dependency>
-
-</dependencies>
 
 </project>
