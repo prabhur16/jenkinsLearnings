@@ -8,7 +8,7 @@ public class SonarDemo {
 		//Same program for Sonar Integration Demo
 		
 		System.out.println("SonarQube Scanner");
-		
+		System.out.println("SonarQube Test");
 	}
 
 }
