@@ -10,6 +10,7 @@ public class SonarDemo {
 		System.out.println("SonarQube Scanner");
 		System.out.println("SonarQube Test");
 		System.out.println("SonarQube Test addedin remote");
+			System.out.println("SonarQube Test addedin remote 22");
 	}
 
 }
